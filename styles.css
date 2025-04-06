@@ -1,5 +1,5 @@
-@import "modern-normalize";
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* @import "modern-normalize"; */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
   line-height: 1.5;
@@ -7,16 +7,29 @@
   --main-bg-color: #e2e8f0;
 }
 
-h1, h2, h3, h4, h5, figure, p, ol, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
   margin: 0;
 }
 
-ol[role="list"], ul[role="list"] {
+ol[role="list"],
+ul[role="list"] {
   list-style: none;
   padding-inline: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -24,4 +37,45 @@ h1, h2, h3, h4, h5 {
 img {
   display: block;
   max-inline-size: 100%;
+}
+
+/* start */
+
+/* article */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 20px;
+
+  grid-auto-rows: 200px;
+
+  margin-top: 50px;
+}
+
+.content > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: black solid 1px;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#pages {
+  margin-bottom: 10px;
 }
