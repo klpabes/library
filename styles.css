@@ -49,7 +49,7 @@ body {
   align-items: center;
 }
 
-.header {
+header {
   text-align: center;
 }
 
@@ -71,11 +71,59 @@ body {
   border: black solid 1px;
 }
 
-#title {
+.title {
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-#pages {
+.pages {
   margin-bottom: 10px;
+}
+
+.bookForm {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.bookForm > input[type="text"] {
+  width: 100%;
+}
+
+article[data-index] > div {
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+
+article[data-index] > h3 {
+  font-weight: bold;
+}
+
+.formButton {
+  margin: 5px 10px;
+}
+
+#desc {
+  resize: none;
+  width: 100%;
+}
+
+dialog > h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.read {
+  background-color: green;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+#newbook {
+  margin-top: 10px;
+  font-size: 1.5rem;
 }

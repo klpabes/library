@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <script src="index.js" defer></script>
-</head>
-<body>
-    <div class="header">
-        <h1>Library</h1>
-    </div>
+  </head>
+  <body>
+    <header>
+      <h1>Library</h1>
+    </header>
+    <button id="newbook">New Book</button>
     <div class="content">
-        <article>
-            <h3 id="title">Name</h3>
-            <h3 id="author">Kent</h4>
-            <h3 id="pages">54 pages</h3>
-            <p>No description</p>
-        </article>
-        <article>Name</article>
-        <article>Name</article>
+      <!-- <article>
+        <h3 class="title">Name</h3>
+        <h3 class="author">Kent</h3>
+        <h3 class="pages">54 pages</h3>
+        <p>No description</p>
+        <button class="btn-read">Read</button>
+        <button class="remove">Remove</button>
+      </article>
+      <article>Name</article>
+      <article>Name</article> -->
     </div>
-</body>
+    <dialog id="favDialog">
+      <h1>Add Book</h1>
+      <form class="bookForm">
+        <label for="title"> Title: </label>
+        <input id="title" type="text" required />
+        <label for="author"> Author: </label>
+        <input id="author" type="text" required />
+        <label for="pages"> No. of Pages: </label>
+        <input id="pages" type="text" required />
+        <label for="desc"> Description: </label>
+        <textarea id="desc" type="text" rows="3"></textarea>
+        <label for="read"> Read: </label>
+        <input type="checkbox" name="read" id="read" />
+        <div>
+          <button class="formButton" id="closeBtn">Close</button>
+          <button type="submit" class="formButton" id="confirmBtn">
+            Submit
+          </button>
+        </div>
+      </form>
+    </dialog>
+  </body>
 </html>
